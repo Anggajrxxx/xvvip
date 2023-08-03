@@ -63,12 +63,10 @@ let vla=$vlx/2
 vmc=$(grep -c -E "^### " "/etc/xray/config.json")
 let vma=$vmc/2
 ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
-
 trx=$(grep -c -E "^#! " "/etc/xray/config.json")
 let tra=$trx/2
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 let ssa=$ssx/2
-
 UDPX="https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2"
 # // Exporting Language to UTF-8
 BIBlack='\033[1;90m'      # Black
@@ -81,7 +79,7 @@ BICyan='\033[1;96m'       # Cyan
 BIWhite='\033[1;97m'      # White
 UWhite='\033[4;37m'       # White
 On_IPurple='\033[0;105m'  #
-On_IRed='\033[0;101m'
+On_IRed='\033[0;101m'     #
 IBlack='\033[0;90m'       # Black
 IRed='\033[0;91m'         # Red
 IGreen='\033[0;92m'       # Green
