@@ -40,19 +40,22 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 
 clear
+figlet 'ANGGA TUNNEL' | lolcat
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "       ${BIWhite}${UWhite}SETTING ${NC}"
 echo -e ""
-echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Panel Domain      "
-echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Change Port All Account      "
+echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Ganti Domain vps     "
+echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Ganti Port       "
 echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Webmin Menu      "
 echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Speedtest VPS   "
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] About Script     "
+echo -e "     ${BICyan}[${BIWhite}05${BICyan}] Tentang Script     "
 echo -e "     ${BICyan}[${BIWhite}06${BICyan}] Set Auto Reboot   "
 echo -e "     ${BICyan}[${BIWhite}07${BICyan}] Restart All Service"
-echo -e "     ${BICyan}[${BIWhite}08${BICyan}] Change Banner"
+echo -e "     ${BICyan}[${BIWhite}08${BICyan}] Ganti Banner vps"
 echo -e "     ${BICyan}[${BIWhite}09${BICyan}] Cek Bandwith"
 echo -e "     ${BICyan}[${BIWhite}10${BICyan}] Setting Auto Reboot"
+echo -e ""
+echo -e "     ${BICyan}[${BIWhite}00${BiCyan}] Keluar Dari Menu Setting
 
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
