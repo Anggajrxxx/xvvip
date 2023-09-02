@@ -224,7 +224,7 @@ echo -e "${BICyan} └───────────────────�
 echo -e "        ${BICyan}┌─────────────────────────────────────┐${NC}"
 echo -e "        ${BICyan}│$NC ${BIYellow}Mod     :    V1.1 ${NC}"
 echo -e "        ${BICyan}│$NC ${GREEN}User          :\033[1;36m ZheeVPN \e[0m"
-echo -e "          $BICyan│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
+echo -e "          $BICyan│$NC License      : ${GREEN} Lifetime $NC"
 echo -e "        ${BICyan}└─────────────────────────────────────┘${NC}"
 echo
 read -p " Select menu : " opt
