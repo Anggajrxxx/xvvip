@@ -1,21 +1,20 @@
 #!/bin/bash
+LIGHT='\e[97m'
+NC='\e[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-
+echo "mod By ZheeVPN"
+sleep 1
 clear 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[40;1;37m        • DOMAIN MENU •            \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "" 
-echo -e " [\e[36m•1\e[0m] CHANGE DOMAIN VPS"
-echo -e " [\e[36m•2\e[0m] Renew Certificate DOMAIN"
-echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e   ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
+echo -e " [\e[36m•1\e[0m] Tambah Domain vps"
+echo -e " [\e[36m•2\e[0m] Ganti Domain vps"
+echo -e " [${LIGHT}•0${NC}] \e[93mKembali Ke menu\033[0m"
 echo -e   ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
+echo -e "${LIGHT}"
 read -p " Select menu : " opt
 echo -e ""
 case $opt in
