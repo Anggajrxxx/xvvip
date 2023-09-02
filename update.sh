@@ -1,5 +1,5 @@
-#wget https://github.com/${GitUser}/
-GitUser="Bringas-tunnel"
+#!/bin/bash
+GitUser="Anggajrxxx"
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
@@ -47,9 +47,9 @@ echo -e "   \e[$below VVERSION NOW >> $Info1"
 echo -e "   \e[$below SSTATUS UPDATE >> $sts"
 echo -e ""
 echo -e "       \e[1;31mWould you like to proceed?\e[0m"
-echo ""
+echo -e ""
 echo -e "            \e[0;32m[ Select Option ]\033[0m"
-echo -e "     \e[$number [ 1 ]\e[m \e[$below CCheck Script Update Now\e[m"
+echo -e "     \e[$number [ 1 ]\e[m \e[$below Cek Script Update Now\e[m"
 echo -e "     \e[$number [ x ]\e[m \e[$below BBack To Menu\e[m"
 echo -e ""
 echo -e "   \e[$line--------------------------------------------------------\e[m"
@@ -97,7 +97,7 @@ clear
 echo ""
 echo -e "\e[0;32mNew Version Downloading started!\e[0m"
 sleep 2
-cd /usr/bin
+cd /usr/bin/
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Anggajrxxx/xvvip/main/ssh/usernew.sh"
 wget -q -O /usr/bin/auto-reboot "https://raw.githubusercontent.com/Anggajrxxx/xvvip/main/menu/auto-reboot.sh"
 wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/Anggajrxxx/xvvip/main/menu/restart.sh"
