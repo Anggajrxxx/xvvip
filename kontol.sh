@@ -71,8 +71,7 @@ sleep 1
 echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
 sleep 1
 echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-echo -e "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now"
-read
+read "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now"
 else
 echo -e "[ ${green}INFO${NC} ] Oke installed"
 fi
